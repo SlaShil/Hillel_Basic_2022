@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Сверстать html форму сбора данных, форма должна содержать
+разные типы полей (text, checkbox, radio ...), минимум в форме должно
+ быть 4 поля. Контекст формы можете брать произвольный. Атрибуты
+ полей формы указывать корректно, для правильной обработки на стороне сервера-->
+
+<h3>Заява на працевлаштування в 'Сільпо'</h3>
+<form action="server.php" method="post" enctype="multipart/form-data">
+
+    <input type="text" name="name" placeholder="Ваше им`я"><br><br>
+    <input type="text" name="name" placeholder="Ваше призвіще"><br><br>
+
+    <h3>Жінка</h3>
+    <input type="radio" name="sex" value="женский">
+    <h3>Чоловік</h3>
+    <input type="radio" name="sex" value="мужской"><br>
+
+    <h3>Охоронець</h3>
+    <input type="checkbox" name="var[]" value="var1">
+    <h3>Касир</h3>
+    <input type="checkbox" name="var[]" value="var2">
+    <h3>Прибиральник</h3>
+    <input type="checkbox" name="var[]" value="var3"><br><br>
+
+    <input type="file" name="file name"><br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
