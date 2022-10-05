@@ -34,21 +34,6 @@ echo '<br>';
 count_b(22.15);
 echo '<br>';
 
-// Вариант 2
-$testStr = 'Bob was born in Berlin';
-$subStr = 'b';
-
-function searchSubStr($needle, $haystack): int|bool
-{
-    if (is_string($needle)) {
-        return substr_count($needle, $haystack);
-    } else {
-        return false;
-    }
-}
-var_dump(searchSubStr($testStr, $subStr));
-echo '<br>';
-
 /* Создать функцию которая считает сумму значений всех элементов массива произвольной глубины */
 $massive = [15,[10,20,[1,2,3,4,5],30,40,50],25,35,45,55];
 function summary($massive): int
